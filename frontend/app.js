@@ -10,7 +10,7 @@
  * pública de tu backend.
  */
 
-const API_BASE_URL = "http://localhost:8080";
+const API_BASE_URL = "https://medical-check-api.onrender.com";
 
 // Elementos principales de la página.
 const indicatorGroups = document.getElementById("indicator-groups");
