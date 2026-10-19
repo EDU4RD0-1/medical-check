@@ -37,14 +37,23 @@
 % 2. INICIO DEL SERVIDOR
 % ==========================================================
 
-% Inicia el servidor HTTP en el puerto 8080.
+
+% Inicia el servidor HTTP usando el puerto de Render
+% o el puerto 8080 cuando trabajamos localmente.
 iniciar_servidor :-
-    http_server(http_dispatch, [port(8080)]),
+    ( getenv('PORT', PuertoTexto)
+    -> atom_number(PuertoTexto, Puerto)
+    ;  Puerto = 8080
+    ),
+    http_server(http_dispatch, [
+        port(Puerto),
+        ip('0.0.0.0')
+    ]),
     format('~n========================================~n'),
     format('  MEDICAL CHECK - API INICIADA~n'),
-    format('  Direccion: http://localhost:8080~n'),
+    format('  Puerto: ~w~n', [Puerto]),
     format('========================================~n'),
-    format('Presiona Ctrl+C para detener el servidor.~n').
+    format('Servidor listo.~n').
 
 
 % ==========================================================
