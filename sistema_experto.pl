@@ -110,12 +110,12 @@ sintoma(gastroenteritis, fiebre).
 sintoma(gastroenteritis, perdida_apetito).
 
 % Migraña
-sintoma(migrana, dolor_cabeza_intenso).
-sintoma(migrana, dolor_pulsatil).
-sintoma(migrana, nausea).
-sintoma(migrana, sensibilidad_luz).
-sintoma(migrana, sensibilidad_sonido).
-sintoma(migrana, aura_visual).
+sintoma(migraña, dolor_cabeza_intenso).
+sintoma(migraña, dolor_pulsatil).
+sintoma(migraña, nausea).
+sintoma(migraña, sensibilidad_luz).
+sintoma(migraña, sensibilidad_sonido).
+sintoma(migraña, aura_visual).
 
 % Asma
 sintoma(asma, sibilancias).
