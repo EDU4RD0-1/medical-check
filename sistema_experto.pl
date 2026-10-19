@@ -109,7 +109,7 @@ sintoma(gastroenteritis, dolor_abdominal).
 sintoma(gastroenteritis, fiebre).
 sintoma(gastroenteritis, perdida_apetito).
 
-% Migraña
+% Migrana
 sintoma(migrana, dolor_cabeza_intenso).
 sintoma(migrana, dolor_pulsatil).
 sintoma(migrana, nausea).
