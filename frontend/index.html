@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f8fc">
+    <meta name="description" content="Medical Check: sistema experto educativo para explorar síntomas y conocer señales de alarma.">
+    <title>Medical Check | Orientación de salud</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="#" aria-label="Medical Check, inicio">
+            <span class="brand-icon">+</span>
+            <span>medical<span class="brand-accent">check</span></span>
+        </a>
+        <span class="header-label">
+            <span class="status-dot"></span>
+            Sistema experto educativo
+        </span>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <span class="eyebrow">TU BIENESTAR, PRIMERO</span>
+                <h1>Entiende tus síntomas.<br><span>Da el siguiente paso.</span></h1>
+                <p>
+                    Selecciona lo que estás experimentando y nuestro sistema
+                    experto analizará las coincidencias con su base de reglas.
+                </p>
+                <a class="hero-link" href="#evaluacion">Comenzar evaluación <span>↓</span></a>
+            </div>
+            <div class="hero-visual" aria-hidden="true">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="medical-symbol">
+                    <span>+</span>
+                </div>
+                <div class="floating-card floating-card-top">
+                    <span class="mini-icon blue">✓</span>
+                    <span><strong>Análisis de indicadores</strong><small>Basado en reglas lógicas</small></span>
+                </div>
+                <div class="floating-card floating-card-bottom">
+                    <span class="mini-icon green">♡</span>
+                    <span><strong>Tu salud importa</strong><small>Información con responsabilidad</small></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="notice">
+            <span class="notice-icon">i</span>
+            <p>
+                <strong>Importante:</strong> esta herramienta tiene fines educativos.
+                No sustituye una consulta médica ni proporciona un diagnóstico definitivo.
+            </p>
+        </section>
+
+        <section class="evaluation-section" id="evaluacion">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">EVALUACIÓN INTERACTIVA</span>
+                    <h2>¿Qué estás experimentando?</h2>
+                    <p>Selecciona todos los indicadores que correspondan a tu situación.</p>
+                </div>
+                <div class="selection-counter"><span id="selected-count">0</span> seleccionados</div>
+            </div>
+
+            <div class="search-wrap">
+                <span class="search-icon" aria-hidden="true">⌕</span>
+                <input id="search-indicators" type="search" placeholder="Buscar síntomas o indicadores..." autocomplete="off">
+            </div>
+
+            <div id="catalog-status" class="inline-status" role="status">
+                Cargando indicadores del sistema experto...
+            </div>
+
+            <div id="indicator-groups"></div>
+
+            <div class="form-actions">
+                <button id="clear-button" class="button button-secondary" type="button">Limpiar selección</button>
+                <button id="evaluate-button" class="button button-primary" type="button" disabled>
+                    Analizar indicadores <span aria-hidden="true">→</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="results-section" class="results-section" hidden aria-live="polite">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">RESULTADO DEL ANÁLISIS</span>
+                    <h2>Tu orientación informativa</h2>
+                    <p>Resultado generado por las reglas del sistema experto.</p>
+                </div>
+            </div>
+            <div id="result-card" class="result-card"></div>
+        </section>
+
+        <section class="how-section">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">¿CÓMO FUNCIONA?</span>
+                    <h2>Lógica detrás de la orientación</h2>
+                </div>
+            </div>
+            <div class="steps-grid">
+                <article class="step-card">
+                    <span class="step-number">01</span>
+                    <h3>Seleccionas</h3>
+                    <p>Indicas los síntomas y datos relevantes que deseas evaluar.</p>
+                </article>
+                <article class="step-card">
+                    <span class="step-number">02</span>
+                    <h3>El sistema razona</h3>
+                    <p>El motor de Prolog compara tus indicadores con hechos y reglas.</p>
+                </article>
+                <article class="step-card">
+                    <span class="step-number">03</span>
+                    <h3>Recibes orientación</h3>
+                    <p>La aplicación presenta coincidencias, señales de alarma y un mensaje informativo.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="emergency-note">
+            <span class="emergency-icon">!</span>
+            <div>
+                <h3>¿Es una emergencia?</h3>
+                <p>
+                    Si tienes dificultad intensa para respirar, dolor fuerte en el pecho,
+                    pérdida del conocimiento u otra señal grave, busca atención de emergencia
+                    inmediatamente. No esperes el resultado de esta página.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a class="brand footer-brand" href="#">
+            <span class="brand-icon">+</span>
+            <span>medical<span class="brand-accent">check</span></span>
+        </a>
+        <p>Proyecto académico · Sistema experto desarrollado con Prolog</p>
+        <p class="footer-disclaimer">Herramienta educativa; no reemplaza la atención profesional.</p>
+    </footer>
+</body>
+</html>
