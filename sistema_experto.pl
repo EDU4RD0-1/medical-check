@@ -5,7 +5,7 @@
 % Motor de inferencia: SWI-Prolog
 %
 % Sistema educativo: no confirma diagnosticos medicos.
-% Las senales de alarma tienen prioridad sobre las coincidencias.
+% Las señales de alarma tienen prioridad sobre las coincidencias.
 % ==========================================================
 
 
@@ -18,7 +18,7 @@ padecimiento(influenza).
 padecimiento(rinitis_alergica).
 padecimiento(faringitis).
 padecimiento(gastroenteritis).
-padecimiento(migrana).
+padecimiento(migraña).
 padecimiento(asma).
 padecimiento(hipertension_arterial).
 
@@ -32,7 +32,7 @@ nombre_padecimiento(influenza, "Influenza").
 nombre_padecimiento(rinitis_alergica, "Rinitis alergica").
 nombre_padecimiento(faringitis, "Faringitis").
 nombre_padecimiento(gastroenteritis, "Gastroenteritis").
-nombre_padecimiento(migrana, "Migrana").
+nombre_padecimiento(migraña, "Migraña").
 nombre_padecimiento(asma, "Asma").
 nombre_padecimiento(hipertension_arterial, "Hipertension arterial").
 
@@ -51,7 +51,7 @@ descripcion_padecimiento(faringitis,
 descripcion_padecimiento(gastroenteritis,
     "Afeccion que puede causar diarrea, nauseas y dolor abdominal.").
 
-descripcion_padecimiento(migrana,
+descripcion_padecimiento(migraña,
     "Tipo de dolor de cabeza que puede acompanarse de otros sintomas.").
 
 descripcion_padecimiento(asma,
